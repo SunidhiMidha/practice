@@ -14,7 +14,7 @@ function App() {
         {/* custom hook for increment decrement */}
         {/* <Counter/> */}
 
-        {/* pagination onEndReached */}
+        {/* pagination */}
         {/* <Pagination/> */}
 
         {/* Password generator */}
