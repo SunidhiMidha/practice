@@ -5,6 +5,7 @@ import Pagination from './Pagination/Pagination';
 import Password from './PasswordGenerator/Password';
 import GridLights from './Grid Lights/GridLightClass';
 import SelectableGrid from './SelectableGrid/SelectableGrid';
+import Polyfill from './Polyfills/Polyfill';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
         {/* selectable grid */}
         {/* <SelectableGrid/> */}
+
+        {/* polyfills */}
+        <Polyfill/>
 
       </header>
     </div>
