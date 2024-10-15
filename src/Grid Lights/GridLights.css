@@ -1,0 +1,23 @@
+.gridLights {
+    background-color: white;
+    /* height: 100px;
+    width: 100px; */
+    padding: 20px;
+}
+
+.box-style {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 12px;
+}
+
+.green {
+    background-color: green;
+}
+
+.empty-border {
+    border: none;
+}
+

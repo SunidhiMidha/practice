@@ -1,0 +1,21 @@
+.cell {
+  height: 50px;
+  width: 50px;
+  border: solid 1px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: #7cb9e8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 15), 50px);
+  grid-template-rows: repeat(var(--rows, 10), 50px);
+  grid-gap: 6px;
+  user-select: none;
+}
