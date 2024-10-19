@@ -6,6 +6,7 @@ import Password from './PasswordGenerator/Password';
 import GridLights from './Grid Lights/GridLightClass';
 import SelectableGrid from './SelectableGrid/SelectableGrid';
 import UsingHook from './CustomHook/UsingHook';
+import LazyComp from './Lazy/MainComponent';
 
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         {/* <SelectableGrid/> */}
 
         {/* custom hook */}
-        <UsingHook/>
+        {/* <UsingHook/> */}
+
+        <LazyComp/>
 
       </header>
     </div>
