@@ -7,6 +7,7 @@ import GridLights from './Grid Lights/GridLightClass';
 import SelectableGrid from './SelectableGrid/SelectableGrid';
 import UsingHook from './CustomHook/UsingHook';
 import LazyComp from './Lazy/MainComponent';
+import StarMain from './StarRating/StarMain';
 
 
 function App() {
@@ -31,7 +32,10 @@ function App() {
         {/* custom hook */}
         {/* <UsingHook/> */}
 
-        <LazyComp/>
+        {/* <LazyComp/> */}
+
+        {/* star rating with 3 states: empty, hover (light yellow) , selected (yellow)  */}
+        <StarMain/>
 
       </header>
     </div>

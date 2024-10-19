@@ -1,0 +1,14 @@
+.star-container {
+ background-color: black;
+ border-radius: 16px;
+ padding: 16px;    
+}
+
+
+.star{
+    margin-left: 16px;
+    height: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
