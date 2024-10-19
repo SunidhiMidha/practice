@@ -8,6 +8,7 @@ import SelectableGrid from './SelectableGrid/SelectableGrid';
 import UsingHook from './CustomHook/UsingHook';
 import LazyComp from './Lazy/MainComponent';
 import StarMain from './StarRating/StarMain';
+import BishopAttack from './Chess/BishopAttack';
 
 
 function App() {
@@ -35,7 +36,10 @@ function App() {
         {/* <LazyComp/> */}
 
         {/* star rating with 3 states: empty, hover (light yellow) , selected (yellow)  */}
-        <StarMain/>
+        {/* <StarMain/> */}
+
+        {/* highlight the pos where mouse is hovered & which positions bishop can attack from that */}
+        <BishopAttack/>
 
       </header>
     </div>

@@ -1,0 +1,25 @@
+.chess-cell {
+  height: 100px;
+  width: 100px;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.light-blue {
+  background-color: #89cff0;
+}
+
+.dark-blue {
+  background-color: #6495ed;
+}
+
+.chess-row {
+  display: flex;
+  flex-direction: row;
+}
