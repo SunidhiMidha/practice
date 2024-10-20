@@ -1,0 +1,29 @@
+.container-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.post-button {
+  background-color: #4169e1;
+  border-radius: 16px;
+  border: 1px solid black;
+  padding: 8px 16px;
+  color: white;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.comment-container {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.add-reply {
+  color: #a7c7e7;
+  font-size: 14px;
+}
+
+.comment-text {
+  font-size: 20px;
+}
