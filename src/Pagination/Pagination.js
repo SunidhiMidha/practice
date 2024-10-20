@@ -27,21 +27,32 @@ export default function Pagination() {
   }, [limit]);
 
   return (
-    <div>
-      {Array.isArray(data) &&
-        !!data.length &&
-        data.map((it, index) => {
-          return <div key={index+it?.title}>{it?.title || "no title found"}</div>;
-        })}
-      {limit <= total && (
-        <button
-          onClick={() => {
-            updateLimit((prev) => prev + 10);
-          }}
-        >
-          Next
-        </button>
-      )}
+    <div
+      style={{
+        height: "100vh", // Take full viewport height
+        overflowY: "scroll", // Only the content inside this div will be scrollable
+        width: "100vh",
+      }}
+      className="scroll-container"
+    >
+      <div style={{ padding: 20 }}>
+        {Array.isArray(data) &&
+          !!data.length &&
+          data.map((it, index) => {
+            return (
+              <div key={index + it?.title}>{it?.title || "no title found"}</div>
+            );
+          })}
+        {limit <= total && (
+          <button
+            onClick={() => {
+              updateLimit((prev) => prev + 10);
+            }}
+          >
+            Next
+          </button>
+        )}
+      </div>
     </div>
   );
 }

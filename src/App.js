@@ -9,38 +9,27 @@ import UsingHook from './CustomHook/UsingHook';
 import LazyComp from './Lazy/MainComponent';
 import StarMain from './StarRating/StarMain';
 import BishopAttack from './Chess/BishopAttack';
-
+import Comments from './NestedComments/Comments';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* custom hook for increment decrement */}
-        {/* <Counter/> */}
-
-        {/* pagination */}
-        {/* <Pagination/> */}
-
-        {/* Password generator */}
-        {/* <Password/> */}
-
-        {/* 3*3 Grid Light */}
-        {/* <GridLights/> */}
-
-        {/* selectable grid */}
-        {/* <SelectableGrid/> */}
-
-        {/* custom hook */}
-        {/* <UsingHook/> */}
-
-        {/* <LazyComp/> */}
-
-        {/* star rating with 3 states: empty, hover (light yellow) , selected (yellow)  */}
-        {/* <StarMain/> */}
-
-        {/* highlight the pos where mouse is hovered & which positions bishop can attack from that */}
-        <BishopAttack/>
-
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path="/counter" element={<Counter/>}/>
+          <Route path="/pagination/next" element={<Pagination/>}/>
+          <Route path="/passwordGen" element={<Password/>}/>
+          <Route path="/gridlLghts" element={<GridLights/>}/>
+          <Route path="/selectableGrids" element={<SelectableGrid/>}/>
+          <Route path="/hooks" element={<UsingHook/>}/>
+          <Route path="/lazy" element={<LazyComp/>}/>
+          <Route path="/star" element={<StarMain/>}/>
+          <Route path="/bishop" element={<BishopAttack/>}/>
+          <Route path="/comments" element={<Comments/>}/>
+        </Routes>
       </header>
     </div>
   );

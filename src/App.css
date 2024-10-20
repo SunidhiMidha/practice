@@ -1,16 +1,12 @@
 .App {
   text-align: center;
+  cursor: default;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  overflow: hidden;
+  height: 100%;
 }
 
 .App-header {
@@ -24,15 +20,66 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hides the scrollbar For WebKit browsers (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  display: none; /*  */
 }
 
-@keyframes App-logo-spin {
+/* Hides the scrollbar For Firefox */
+.scroll-container {
+  scrollbar-width: none;
+}
+
+/* Hides the scrollbar For Internet Explorer and Edge */
+.scroll-container {
+  -ms-overflow-style: none;
+}
+
+
+.home-container {
+}
+
+.title {
+  font-size: 10ch;
+}
+
+.sub-title {
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px 32px;
+  color: black;
+}
+
+.menu-element {
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
 }
